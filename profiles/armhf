@@ -1,0 +1,16 @@
+[settings]
+os=Linux
+os_build=Linux
+arch=armv7hf
+arch_build=x86_64
+compiler=gcc
+compiler.version=7
+compiler.libcxx=libstdc++
+build_type=Release
+[options]
+[build_requires]
+[env]
+LDFLAGS="-L/usr/lib/gcc-cross/arm-linux-gnueabihf/7 -L/usr/lib/arm-linux-gnueabihf/"
+CC=arm-linux-gnueabihf-gcc
+CXX=arm-linux-gnueabihf-g++
+PATH=/usr/bin
